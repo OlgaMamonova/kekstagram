@@ -45,7 +45,7 @@ const commentSentences = [
 
 const names = ['Артем', 'Ева', 'Линда', 'Вика', 'Тим', 'Александр'];
 
-// функция возвращает случайное целое число в заданном интервале включительно 
+// функция возвращает случайное целое число в заданном интервале включительно
 
 const getRandomIntInclusive = (min, max) => {
     min = Math.ceil(min);
@@ -55,9 +55,9 @@ const getRandomIntInclusive = (min, max) => {
     }
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
-  
+
   // Функция для проверки максимальной длины строки
-  
+
 const checkstringLength = (stringLength, maxStringLength) => stringLength <= maxStringLength;
 
 // возвращает случайный элемент массива
@@ -83,5 +83,5 @@ const createPost = (id) => ({
 
 const getPosts = () => Array.from({ length: POSTS_COUNT}, (_, postIndex) => createPost(postIndex + 1));
 
-getPosts();  
+getPosts();
 checkstringLength(36, 140);
