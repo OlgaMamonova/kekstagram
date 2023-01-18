@@ -11,4 +11,8 @@ const getRandomIntInclusive = (min, max) => {
 // возвращает случайный элемент массива
 const getRandomArrayElement = (elements) => elements[getRandomIntInclusive(0, elements.length - 1)];
 
-export {getRandomIntInclusive, getRandomArrayElement};
+// проверка нажатия клавиши esc
+
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+export {getRandomIntInclusive, getRandomArrayElement, isEscapeKey};

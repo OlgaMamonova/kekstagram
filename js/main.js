@@ -1,3 +1,6 @@
 import { getPosts } from './data.js';
+import { renderThumbnails } from './render-thumbnails.js';
+import './big-picture-modal.js';
 
-getPosts();
+window.posts = getPosts();
+renderThumbnails();
